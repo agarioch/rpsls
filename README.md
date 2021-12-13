@@ -5,7 +5,7 @@
 This is a simple Next.js project that allows a user to play rock paper scissors against a computer that selects its own gesture at random.
 Right now it does not work as intended, as the computer always wins!
 
-It's currently not working, a few bugs were added by the last person who touched this code..
+It's currently not working, a few bugs were added by the last person who touched this code.
 We'd like you to get this project up and running and complete the game logic by extending the rules to include the `lizard` and `spock` gestures
 
 
@@ -29,7 +29,7 @@ BDD Acceptance Criteria
 
 ```
 AS A Player
-WHEN I click a gesture from tthe game logic
+WHEN I click a gesture from the game logic
 THEN a round is played against the computer
 AND the gesture the computer picks is not the same as mine
 AND I see a message telling me who won (the player or the computer)
