@@ -1,6 +1,6 @@
-import { Gesture } from "../../../types";
+import { Gesture } from '../../../types';
 
-const gestures: Gesture[] = ["scissors", "paper", "rock", "lizard", "spock"];
+const gestures: Gesture[] = ['scissors', 'paper', 'rock', 'lizard', 'spock'];
 
 const gestureBeats = {};
 // create mapping of gesture to gestures they beat e.g. rock: [spock, paper]
