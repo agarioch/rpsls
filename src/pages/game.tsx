@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Gesture } from '../../types';
+import Layout from '../components/layout';
 import Result from '../components/result';
 import { play } from '../helpers/pages/game';
 import { gestures } from '../helpers/pages/gestures';
@@ -14,17 +15,21 @@ export default () => {
   };
 
   const gestureButtons = gestures.map((gesture) => (
-    <button key={gesture} onClick={() => playGame(gesture)}>
+    <button
+      className={styles.button}
+      key={gesture}
+      onClick={() => playGame(gesture)}
+    >
       {gesture}
     </button>
   ));
   const results = games.map((result, i) => <Result key={i} result={result} />);
 
   return (
-    <div className={styles.container}>
+    <Layout>
       {gestureButtons}
 
-      {games.length > 0 && <section>{results}</section>}
-    </div>
+      <div className={styles.results}>{games.length > 0 && results}</div>
+    </Layout>
   );
 };

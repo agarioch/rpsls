@@ -1,0 +1,10 @@
+.result {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 30rem;
+}
+.result > * {
+  margin: 0;
+}
